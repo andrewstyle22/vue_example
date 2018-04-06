@@ -10,7 +10,7 @@ using vue_example.Model;
 namespace vue_example.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Todo")]
+    [Route("api/[controller]")]
     public class TodoController : Controller
     {
         private static ConcurrentBag<Todo> todos = new ConcurrentBag<Todo>
